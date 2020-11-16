@@ -6,14 +6,14 @@ pangkat_tiga_1 = lambda angka_1, angka_2, larik : [angka_1 ** 3 if angka_1 % 3 =
                                                   angka_2 ** 2,
                                                   [elemen * 2 for elemen in larik]]
 
-#print(pangkat_tiga(3))
-#print(pangkat_tiga_1(4, 4, [2,3,4]))
+print(pangkat_tiga(3))
+print(pangkat_tiga_1(4, 4, [2,3,4]))
 
 # Fungsi sebagai argumen/parameter
 def bagi_dua(hasil_pangkat_tiga):
   return hasil_pangkat_tiga / 2
 
-#print(bagi_dua(pangkat_tiga(4)))
+print(bagi_dua(pangkat_tiga(4)))
 
 # Fungsi di dalam fungsi sebagai nilai balik
 def halo(nama):
@@ -22,7 +22,7 @@ def halo(nama):
 def sapa(nama):
   return halo(nama)
 
-#sapa("Sanji")
+sapa("Sanji")
 
 # Generator
 def ini_generator():
@@ -31,8 +31,8 @@ def ini_generator():
   yield 3
   yield "JoJo"
 
-#for i in ini_generator():
-#  print(i)
+for i in ini_generator():
+  print(i)
 
 def balok(panjang, lebar, tinggi):
   volume = panjang * lebar * tinggi
