@@ -1,7 +1,7 @@
 def luas_segitiga(alas, tinggi):
-  return alas * tinggi / 2
+  return alas * tinggi * 0.5
 
-def keliling_segitia(*sisi):
+def keliling_segitiga(*sisi):
   return sum(sisi)
 
 def luas_persegi(sisi):
@@ -9,9 +9,3 @@ def luas_persegi(sisi):
 
 def keliling_persegi(sisi):
   return sisi * 4
-
-def luas_lingkaran(diameter):
-  return 22/7 * ((diameter / 2) ** 2)
-
-def keliling_lingkaran(diameter):
-  return 22/7 * diameter
