@@ -1,11 +1,18 @@
+# memuat semua isi modul/file
 import Bangun_Datar
-import Bangun_Ruang
 
-import Beli.Buku as beli_buku
-from Simpan.Pulsa import tiga
+print(Bangun_Datar.luas_segitiga(5, 5))
 
-print(Bangun_Datar.keliling_lingkaran(20))
-print(Bangun_Ruang.luas_permukaan_bola(100))
+# memuat semua isi modul/file dengan alias
+import Bangun_Ruang as br
 
-beli_buku.novel()
-tiga()
+print(br.luas_permukaan_kubus(8))
+
+# memuat sebagian isi dari modul package Beli
+from Beli import Buku
+from Beli.Mobil import jeep
+import Beli
+
+Buku.novel("Perahu Kertas")
+jeep("Katana")
+Beli.Mobil.sedan()

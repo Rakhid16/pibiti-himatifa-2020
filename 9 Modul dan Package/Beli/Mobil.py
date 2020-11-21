@@ -1,5 +1,5 @@
+def jeep(merk):
+  print("Jeep merk "+ merk +" telah terbeli")
+
 def sedan():
   print("Sedan telah terbeli")
-
-def jeep():
-  print("Jeep telah terbeli")
